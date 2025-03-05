@@ -1,0 +1,55 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[11pt,a4paper]{aghrisscv}\geometry{left=1.5cm,right=1.5cm,top=1cm,bottom=0.5cm}
+\setmainfont{Lato}
+
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Blue}
+\colorlet{accent}{NavyBlue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\begin{document}
+\name{Ayoub GHRISS}
+%\tagline{Objectif : Internhip in Computer Vision and Machine Learning}
+\tagline{}
+\personalinfo{
+  \email{ayoub.ghriss(at)colorado(dot)edu}{ayoub.ghriss@colorado.edu}%\hspace{-1em}
+  \phone{+1(720)-323-43$\sqrt{81}$5}%\hspace{-1em}
+  \homepage{ayghri.com}%\hspace{-1em}
+  \flag{MA, FR}
+}
+
+\makecvheader
+\medskip
+\vspace{0.5em}
+
+
+% \begin{minipage}[t]{0.70\linewidth}
+\input{education}
+\vspace{1.2em}
+
+\input{work}
+\vspace{1.2em}
+\begin{minipage}[t]{0.70\linewidth}
+\input{projects}
+\end{minipage}
+\hfill
+% \rule[-27.6em]{0.1mm}{26em}
+\rule[-27.6em]{0.1mm}{26em}
+% \rule[-40em]{0.1mm}{10em}
+\hfill
+\begin{minipage}[t]{0.28\linewidth}
+% \input{technicals}
+% \input{extra}
+\input{skills}
+\end{minipage}
+
+\newpage
+
+
+% \input{skills}
+% \input{technicals}
+
+\end{document}
