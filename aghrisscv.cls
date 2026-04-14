@@ -139,18 +139,16 @@
     \smallskip
 }
 \newcommand{\publication}[3]{%
-    %\noindent
-    \vspace{5pt}
-    \begin{minipage}[t]{0.15\textwidth}
+    \begin{minipage}[t]{0.1\textwidth}
         \small{#1}
     \end{minipage}%
     \vrule
-%hfill
-    \hspace{1em}
-    \begin{minipage}[t]{0.8\textwidth}
-    \textbf{\color{accent}#2}\par
+    \hspace{0.5em}
+    \begin{minipage}[t]{0.88\textwidth}
+    \vspace{-6pt}
+    \color{accent}#2\\
     \smallskip
-    \makebox[0.6\linewidth][l]{{\color{emphasis}#3}}
+    \makebox[0.6\linewidth][l]{{\small\color{emphasis}#3}}
     \end{minipage}
 \medskip
 }
