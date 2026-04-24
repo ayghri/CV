@@ -52,6 +52,7 @@
 \newcommand{\twittersymbol}{\faTwitter}
 \newcommand{\githubsymbol}{\faGithub}
 \newcommand{\orcidsymbol}{\aiOrcid}
+\newcommand{\scholarsymbol}{\aiGoogleScholar}
 \newcommand{\mailsymbol}{\faEnvelope}
 \newcommand{\flagsymbol}{\faFlagO}
 \newcommand{\gmailsymbol}{\faGoogle}
@@ -67,9 +68,10 @@
 \newcommand{\phone}[1]{\printinfo{\phonesymbol}{#1}}
 \newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{\href{https://#1}{#1}}}
 \newcommand{\twitter}[1]{\printinfo{\twittersymbol}{#1}}
-\newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{\href{http://linkedin.com/in/#1}{#1}}}
-\newcommand{\github}[1]{\printinfo{\githubsymbol}{#1}}
+\newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{\href{https://linkedin.com/in/#1}{#1}}}
+\newcommand{\github}[1]{\printinfo{\githubsymbol}{\href{https://github.com/#1}{#1}}}
 \newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
+\newcommand{\scholar}[2]{\printinfo{\scholarsymbol}{\href{https://scholar.google.com/citations?user=#1}{#2}}}
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
 \newcommand{\flag}[1]{\printinfo{\flagsymbol}{#1}}
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
