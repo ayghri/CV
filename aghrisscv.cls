@@ -26,10 +26,6 @@
 %\RequirePackage{xcolor}
 \RequirePackage{graphicx}
 
-
-
-
-
 \setlist{leftmargin=0.2in,labelsep=0.5em,nosep,itemsep=0.25\baselineskip,after=\vskip0.25\baselineskip}
 \setlist[itemize]{label=\itemmarker}
 \setlength{\medskipamount}{1pt}
@@ -39,8 +35,7 @@
 \newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.1ex}{0.3ex}}}
 
 \newcommand{\measuredivider}[2]{
-\textcolor{body}{\hdashrule{#1\linewidth}{0.4ex}{0.3ex}}\textcolor{body!30}{\hdashrule{#2\linewidth}{0.4ex}{0.3ex}}\smallskip}
-
+  \textcolor{body}{\hdashrule{#1\linewidth}{0.4ex}{0.3ex}}\textcolor{body!30}{\hdashrule{#2\linewidth}{0.4ex}{0.3ex}}\smallskip}
 
 \newcommand{\itemmarker}{{\small\textbullet}}
 
@@ -78,18 +73,18 @@
 
 \newcommand{\makecvheader}{%
   %\begingroup
-    \raggedright\color{emphasis}{\Large\bfseries{\@name}\par}
-    \medskip
-    {\large\bfseries\color{emphasis}\@tagline\par}
-    \medskip
-    {\footnotesize\bfseries\@personalinfo\par}
+  \raggedright\color{emphasis}{\Large\bfseries{\@name}\par}
+  \medskip
+  {\large\bfseries\color{emphasis}\@tagline\par}
+  \medskip
+  {\footnotesize\bfseries\@personalinfo\par}
   %\endgroup
 }
 
 \newcommand{\cvsection}[2][]{%
 \medskip
-  {\color{heading}\large\bfseries\MakeUppercase{#2}}\\[-1ex]%
-  {\color{heading}\rule{\linewidth}{1pt}\par}
+{\color{heading}\normalsize\bfseries\MakeUppercase{#2}}\\[-1ex]%
+{\color{heading}\rule{\linewidth}{1pt}\par}
 }
 
 \newcommand{\cvsubsection}[1]{%
@@ -98,32 +93,32 @@
 }
 
 \newcommand{\cvevent}[5]{%
-    \makebox[0.8\textwidth][l]{\textbf{\color{accent}#2}}\hfill {\footnotesize#4}
-    \small
-    \par
-    {\hspace{1em}\faGraduationCap \hspace{0.5em} \color{emphasis}#1}\par
-    % ?\vspace{-3pt}
-    % noindent
-    % \begin{minipage}{\linewidth}
-        % \begin{minipage}[l]{0.6em}
-        % \ 
-        % \end{minipage}
-        % \hfill     
-        % \begin{minipage}[l]{0.9\linewidth}
-            #5
-        % \end{minipage}%
-    % \end{minipage}
- }
+  \makebox[0.8\textwidth][l]{\textbf{\color{accent}#2}}\hfill {\footnotesize#4}
+  \small
+  \par
+  {\hspace{1em}\faGraduationCap \hspace{0.5em} \color{emphasis}#1}\par
+  % ?\vspace{-3pt}
+  % noindent
+  % \begin{minipage}{\linewidth}
+  % \begin{minipage}[l]{0.6em}
+  % \ 
+  % \end{minipage}
+  % \hfill     
+  % \begin{minipage}[l]{0.9\linewidth}
+  #5
+  % \end{minipage}%
+  % \end{minipage}
+}
 \newcommand{\cvwork}[3]{%
-    % \begin{minipage}[t]{0.7\textwidth}
-    %     \makebox[0.5\linewidth][l]{{\color{emphasis}#1}\hspace{1em}}
-    % \end{minipage}%
-    % \begin{minipage}[t]{0.3\textwidth}
-    % {\footnotesize #2}\par
-    % \end{minipage}
-    \makebox[0.5\linewidth][l]{{\color{emphasis}#1}}\hfill{\hspace{1em}\footnotesize#2}\par
-    \vspace{2pt}
-    {\faMapMarker\hspace{0.5em}\color{accent}#3}
+  % \begin{minipage}[t]{0.7\textwidth}
+  %     \makebox[0.5\linewidth][l]{{\color{emphasis}#1}\hspace{1em}}
+  % \end{minipage}%
+  % \begin{minipage}[t]{0.3\textwidth}
+  % {\footnotesize #2}\par
+  % \end{minipage}
+  \makebox[0.5\linewidth][l]{{\color{emphasis}#1}}\hfill{\hspace{1em}\footnotesize#2}\par
+  \vspace{2pt}
+  {\faMapMarker\hspace{0.5em}\color{accent}#3}
 }
 
 \newcommand{\cvworkold}[3]{%
@@ -132,35 +127,32 @@
   %\medskip
 }
 \newcommand{\cvproject}[3]{%
-    
-  \makebox[0.6\linewidth][l]{{\color{emphasis}#1}}
-  \hfill
-  \small{#3}\par
-  \smallskip
-  \textbf{\color{accent}#2}\par
-    \smallskip
+  \makebox[0.75\linewidth][l]{ {{\color{accent}#1}}: \small{#2}} \small{#3} \par
+  % \smallskip
+  % \textbf{\color{accent}#2}
+  % \smallskip
 }
 \newcommand{\publication}[3]{%
-    \begin{minipage}[t]{0.1\textwidth}
-        \small{#1}
-    \end{minipage}%
-    \vrule
-    \hspace{0.5em}
-    \begin{minipage}[t]{0.88\textwidth}
+  \begin{minipage}[t]{0.1\textwidth}
+    \small{#1}
+  \end{minipage}%
+  \vrule
+  \hspace{0.5em}
+  \begin{minipage}[t]{0.88\textwidth}
     \vspace{-6pt}
     \color{accent}#2\\
     \smallskip
     \makebox[0.6\linewidth][l]{{\small\color{emphasis}#3}}
-    \end{minipage}
-\medskip
+  \end{minipage}
+  \medskip
 }
 
 \newcommand{\cvachievement}[3]{%
   \begin{tabularx}
-  {\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
-  \multirow{2}{*}
-  {\normalsize\color{accent}#1} & {\small\textbf{\textcolor{emphasis}#2}}\\
-  & {\footnotesize #3}
+    {\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
+    \multirow{2}{*}
+    {\normalsize\color{accent}#1} & {\small\textbf{\textcolor{emphasis}#2}} \\
+                                  & {\footnotesize #3}
   \end{tabularx}%
   \medkip
 }
@@ -170,13 +162,12 @@
 }
 
 \newcommand{\cvskill}[2]{%
-\textcolor{emphasis}{\small\textbf{#1}}\hfill
+  \textcolor{emphasis}{\small\textbf{#1}}\hfill
   \space{\small {\color{body!30}} #2}
-  }
-\newcommand{\link}[1]{
-    \href{#1}{\faLink}
 }
- 
+\newcommand{\link}[1]{
+  \href{#1}{\faLink}
+}
 
 \AtBeginDocument{%
   \pagestyle{empty}
